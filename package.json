@@ -1,0 +1,71 @@
+{
+	"name": "theme-pablo",
+	"version": "1.0.1",
+	"displayName": "Life Of Pablo - Dark",
+	"description": "A dark theme inspired by Kanye's 'Life Of Pablo'",
+	"publisher": "anahita-m",
+	"license": "MIT",
+	"scripts": {
+		"build": "node ./scripts/build.js",
+		"lint": "node ./scripts/lint.js",
+		"package": "vsce package -o ./bin/dracula.vsix",
+		"vscode:prepublish": "npm run build",
+		"vsce-publish": "vsce publish"
+	},
+	"maintainers": [
+		"Anahita Mohapatra <mohapatra.anahita@gmail.com>"
+	],
+	"contributors": [
+		"Krzysztof Wisznarewski",
+		"Daniel Ramos",
+		"Eric Jackson",
+		"Elliott Pogue",
+		"Ajit Singh",
+		"Teddy Bradford",
+		"Derek P Sifford",
+		"Zeno Rocha"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/anahita-m/visual-studio-code.git"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"kanye",
+		"dark",
+		"theme",
+		"color-theme",
+		"life of pablo",
+		"album",
+		"music"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#3c4557",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Life of Pablo",
+				"uiTheme": "vs-dark",
+				"path": "./theme/pablo.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"js-yaml": "^3.14.0",
+		"prettier": "^2.2.0",
+		"tinycolor2": "^1.4.2",
+		"vsce": "^1.81.1"
+	},
+	"__metadata": {
+		"publisherDisplayName": "Anahita Mohapatra",
+		"publisherid":"anahita-m"
+	}
+}
